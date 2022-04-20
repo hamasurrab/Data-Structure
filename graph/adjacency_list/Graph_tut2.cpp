@@ -18,9 +18,11 @@ void printGraph(vector<int> adj[], int v){
 }
 
 
+
+
 int main(){
-    int v=5;
-    vector<int> adj[v];
+    int v=7;
+    vector<int> adj[7];
     addEdge(adj,1,2);
     addEdge(adj,1,3);
     addEdge(adj,1,4);
