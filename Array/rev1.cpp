@@ -1,18 +1,25 @@
 #include<iostream>
 using namespace std;
+
+void print(int *a,int n){
+//  int n=sizeof(a)/sizeof(int);
+cout<<"IN FUNCTION "<<sizeof(a)<<endl;
+for(int i=0;i<n;i++){
+    cout<<a[i]<<" "<<endl;
+}
+
+
+}
+
+
 int main()
 {
-    int n;
-    cin>>n;
-    cout<<endl;
-    for(int i=0;i<=n-1;i++){
-        for(int j=0;j<i;j++){
-            cout<<"-";
-        }
-        
-        for(int k=n;k>i;k--)
-        cout<<"*";
-    cout<<endl;
+    int a[]={1,2,3,4,5,6};
+    int n=sizeof(a)/sizeof(int);
+    cout<<"In MAIN "<<sizeof(a)<<endl;
+   
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
     }
-// cout<<endl;
-}
+ print(a,n);
+ }
